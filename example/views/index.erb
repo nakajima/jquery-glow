@@ -33,7 +33,8 @@
   </style>
   <script type="text/javascript" charset="utf-8">
     $(document).ready(function() {
-      $('a').addGlow();
+      $('.white').addGlow({ textColor: 'white', haloColor: '#aaa' });
+      $('.black').addGlow({ textColor: 'black', haloColor: '#777' });
       $('*').bind('glow:started', console.info);
       $('*').bind('glow:canceled', console.info);
     });
@@ -42,7 +43,8 @@
 </head>
 <body>
   <div>
-    Hello, my name is <a href="#">Foo</a>. And I'm quite <a href="#">happy</a> to meet you.
+    Hello, my name is <a href="#" class="white">Foo</a>.
+    And I'm quite <a class="black" href="#">happy</a> to meet you.
   </div>
 </body>
 </html>
