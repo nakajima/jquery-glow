@@ -1,4 +1,4 @@
-(function() {
+(function($) {
   var currentRadius, multiplier;
   
   function parseOptions(options) {
@@ -6,7 +6,7 @@
       RADIUS:     (options.radius    || 20),
       DURATION:   (options.duration  || 500),
       TEXT_COLOR: (options.textColor || '#fff'),
-      HALO_COLOR: (options.haloColor || '#999')
+      HALO_COLOR: (options.haloColor || '#777')
     }
   }
   
@@ -18,20 +18,20 @@
     }
   }
   
-  jQuery.fx.step['textShadow'] = function(fx){
+  function stepTextShadow(fx) {
 		if (fx.state == 0) {
 			fx.start = currentRadius(fx.elem);
 		}
-		
+
 		with(fx.end) {
       updatedRadius = begin ?
         parseInt(radius * fx.pos) :
         parseInt(radius - (radius * fx.pos))
   		fx.elem.style['text-shadow'] = color + ' 0 0 ' + updatedRadius + 'px';
 		}
-	}
+  }
   
-  $.fn.addGlow = function addGlow(opts) {
+  function addGlow(opts) {
     var opts = parseOptions(opts || { });
 
     function startGlow() {
@@ -65,4 +65,6 @@
     return this;
   }
   
-})()
+  $.fx.step['textShadow'] = stepTextShadow;
+  $.fn.addGlow = addGlow;
+})(jQuery);
