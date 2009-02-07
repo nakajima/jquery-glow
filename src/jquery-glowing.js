@@ -28,7 +28,6 @@
         parseInt(radius * fx.pos) :
         parseInt(radius - (radius * fx.pos))
   		fx.elem.style['text-shadow'] = color + ' 0 0 ' + updatedRadius + 'px';
-  		console.info(updatedRadius)
 		}
 	}
   
