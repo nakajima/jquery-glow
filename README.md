@@ -4,6 +4,8 @@ Add the ability to make elements "glow" when you hover over
 them. For browsers that support the `text-shadow` CSS property,
 you can also add a halo.
 
+Example: [jquery-glow.patnakajima.net](http://jquery-glow.patnakajima.net)
+
 ## Usage
 
 Here's the most basic example:
