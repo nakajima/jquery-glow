@@ -1,4 +1,4 @@
-# glowQuery
+# jQuery Glow
 
 Add the ability to make elements "glow" when you hover over
 them. For browsers that support the `text-shadow` CSS property,
