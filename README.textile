@@ -1,3 +1,0 @@
-h1. jquery-glowing
-
-(c) Copyright 2008 Pat Nakajima, released under MIT License.

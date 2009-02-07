@@ -4,7 +4,7 @@
   function parseOptions(options) {
     return {
       RADIUS:     (options.radius    || 20),
-      DURATION:   (options.duration  || .5),
+      DURATION:   (options.duration  || 500),
       TEXT_COLOR: (options.textColor || '#0af'),
       HALO_COLOR: (options.haloColor || '#059')
     }
@@ -43,7 +43,7 @@
           color: opts.HALO_COLOR,
           radius: opts.RADIUS
         }
-      }, opts.DURATION * 1000);
+      }, opts.DURATION);
     }
 
     function startFade() {
@@ -54,7 +54,7 @@
           color: opts.HALO_COLOR,
           radius: opts.RADIUS
         }
-      }, opts.DURATION * 1000);
+      }, opts.DURATION);
     }
     
     with($(this)) {
