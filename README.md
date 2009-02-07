@@ -32,8 +32,13 @@ The following options can be used:
 **`radius`**: Controls the size of the halo (in supported browsers).
 **`duration`**: The speed of the glowing effect.
 
+## Requirements
+
+* jQuery
+* the jQuery color plugin (bundled in `src` directory)
+
 ## TODO
 
-* `delay` option
+* Add a `delay` option
 
 (c) Copyright 2009 Pat Nakajima, released under MIT License.
