@@ -5,8 +5,8 @@
     return {
       RADIUS:     (options.radius    || 20),
       DURATION:   (options.duration  || 500),
-      TEXT_COLOR: (options.textColor || '#0af'),
-      HALO_COLOR: (options.haloColor || '#059')
+      TEXT_COLOR: (options.textColor || '#fff'),
+      HALO_COLOR: (options.haloColor || '#999')
     }
   }
   
