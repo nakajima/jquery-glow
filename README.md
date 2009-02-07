@@ -6,6 +6,10 @@ you can also add a halo.
 
 Example: [jquery-glow.patnakajima.net](http://jquery-glow.patnakajima.net)
 
+**Note:** The halo only appears in browsers that support the `text-shadow`
+CSS property (like Safari). Without it, you can still make the text glow,
+but you can't add the halo.
+
 ## Usage
 
 Here's the most basic example:
