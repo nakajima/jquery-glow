@@ -30,7 +30,7 @@
     if (fx.end.begin || (fx.state < 1)) {
       fx.elem.style['text-shadow'] = fx.end.color + ' 0 0 ' + updatedRadius + 'px';
     } else {
-      fx.elem.style['text-shadow'] = 'none';
+      fx.elem.style['text-shadow'] = $(fx.elem).data('glow.originalGlow');
     }
   }
 
@@ -63,6 +63,7 @@
       bind('mouseenter', startGlow);
       bind('mouseleave', startFade);
       data('glow.originColor', css('color'));
+      data('glow.originalGlow', (css('text-shadow') || 'none'));
     }
 
     return this;
