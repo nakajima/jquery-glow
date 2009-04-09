@@ -24,8 +24,8 @@
     }
 
     updatedRadius = fx.end.begin ?
-      Math.max(Math.min(parseInt(fx.end.radius * fx.pos))) :
-      Math.max(Math.min(parseInt(fx.end.radius - (fx.end.radius * fx.pos))))
+      parseInt(fx.end.radius * fx.pos) :
+      parseInt(fx.end.radius - (fx.end.radius * fx.pos))
 
     if (fx.end.begin || (fx.state < 1)) {
       fx.elem.style['text-shadow'] = fx.end.color + ' 0 0 ' + updatedRadius + 'px';
