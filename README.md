@@ -33,10 +33,10 @@ Here's a more advanced one:
 
 The following options can be used:
 
-**`textColor`**: Which color the text should glow.
-**`haloColor`**: The halo color (in supported browsers).
-**`radius`**: Controls the size of the halo (in supported browsers).
-**`duration`**: The speed of the glowing effect.
+* **`textColor`**: Which color the text should glow.
+* **`haloColor`**: The halo color (in supported browsers).
+* **`radius`**: Controls the size of the halo (in supported browsers).
+* **`duration`**: The speed of the glowing effect.
 
 ## Requirements
 

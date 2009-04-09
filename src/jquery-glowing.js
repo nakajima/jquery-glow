@@ -38,6 +38,7 @@
     var opts = parseOptions(opts || { });
 
     function startGlow() {
+      $(this).stop();
       $(this).animate({
         color: opts.TEXT_COLOR,
         textShadow: {
@@ -49,6 +50,7 @@
     }
 
     function startFade() {
+      $(this).stop();
       $(this).animate({
         color: $(this).data('glow.originColor'),
         textShadow: {
