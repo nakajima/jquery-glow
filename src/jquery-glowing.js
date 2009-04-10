@@ -28,9 +28,9 @@
       parseInt(fx.end.radius - (fx.end.radius * fx.pos))
 
     if (fx.end.begin || (fx.state < 1)) {
-      fx.elem.style['text-shadow'] = fx.end.color + ' 0 0 ' + updatedRadius + 'px';
+      $(fx.elem).css('text-shadow', fx.end.color + ' 0 0 ' + updatedRadius + 'px');
     } else {
-      fx.elem.style['text-shadow'] = $(fx.elem).data('glow.originalGlow');
+      $(fx.elem).css('text-shadow', $(fx.elem).data('glow.originalGlow'));
     }
   }
 
